@@ -1,5 +1,4 @@
 ---
-<<<<<<< HEAD
 title: "PA1_template"
 output: html_document
 ---
@@ -108,29 +107,3 @@ acttime <- aggregate(activity2$steps, by = list(activity2$interval, activity2$da
 
 xyplot(acttime$x ~ acttime$Group.1 | acttime$Group.2, data = acttime, type = "l", xlab = "Interval", ylab = "Mean steps")
 ```
-=======
-title: "Reproducible Research: Peer Assessment 1"
-output: 
-  html_document:
-    keep_md: true
----
-
-
-## Loading and preprocessing the data
-
-
-
-## What is mean total number of steps taken per day?
-
-
-
-## What is the average daily activity pattern?
-
-
-
-## Imputing missing values
-
-
-
-## Are there differences in activity patterns between weekdays and weekends?
->>>>>>> 80edf39c3bb508fee88e3394542f967dd3fd3270
