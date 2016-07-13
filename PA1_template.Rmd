@@ -15,7 +15,7 @@ In this step I load the lattice package for future use and then I read in the da
 
 library(lattice)
 
-activity <- read.csv("/mnt/it159/pdb/Marketing_Analysis/Brian/File/Data Science/Reproducible Research/activity.csv")
+activity <- read.csv("~/Coursera/Reproducible_Research/activity.csv")
 
 perday <- aggregate(activity$steps, by = list(activity$date), FUN = sum, na.rm = TRUE)
 names(perday) <- c("date", "sum.steps")

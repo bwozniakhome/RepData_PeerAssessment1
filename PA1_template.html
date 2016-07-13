@@ -124,7 +124,7 @@ $(document).ready(function () {
 <p>In this step I load the lattice package for future use and then I read in the data into a dataset. I also create two datasets: one that sums up steps by day and one that averages steps over each interval.</p>
 <pre class="r"><code>library(lattice)
 
-activity &lt;- read.csv(&quot;/mnt/it159/pdb/Marketing_Analysis/Brian/File/Data Science/Reproducible Research/activity.csv&quot;)
+activity &lt;- read.csv(&quot;~/Coursera/Reproducible_Research/activity.csv&quot;)
 
 perday &lt;- aggregate(activity$steps, by = list(activity$date), FUN = sum, na.rm = TRUE)
 names(perday) &lt;- c(&quot;date&quot;, &quot;sum.steps&quot;)
